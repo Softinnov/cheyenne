@@ -1,4 +1,4 @@
-cheyenne
+Cheyenne
 ========
 
 Cheyenne Docker Image
