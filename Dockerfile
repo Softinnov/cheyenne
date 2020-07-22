@@ -1,4 +1,4 @@
-FROM debian:7.7
+FROM debian:8
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN dpkg --add-architecture i386
