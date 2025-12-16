@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian/eol:buster-slim
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN dpkg --add-architecture i386
