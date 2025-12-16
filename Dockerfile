@@ -1,9 +1,9 @@
-FROM debian:buster-slim
+FROM debian:bookworm-slim
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN dpkg --add-architecture i386
 RUN apt-get update -y
-RUN apt-get -y install libc6:i386 libreadline7:i386
+RUN apt-get -y install libc6:i386 libreadline8:i386
 
 # set timezone
 RUN ln -fs /usr/share/zoneinfo/Europe/Paris /etc/localtime \
